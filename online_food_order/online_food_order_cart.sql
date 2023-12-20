@@ -1,0 +1,15 @@
+
+DROP TABLE IF EXISTS `cart`;
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` varchar(255) DEFAULT NULL,
+  `food_id` int(11) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+LOCK TABLES `cart` WRITE;
+INSERT INTO `cart` VALUES (4,'2022-06-25',1,10,2),(5,'2022-06-25',2,2,2),(6,'2022-06-25',3,1,2);
+UNLOCK TABLES;
